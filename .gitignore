@@ -1,0 +1,42 @@
+# .NET build output
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.cache
+
+# Visual Studio
+.vs/
+.vscode/
+
+# NuGet
+*.nupkg
+packages/
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.db-journal
+
+# Environment
+.env
+.env.local
+
+# Test results
+TestResults/
+
+# Coverage
+coverage/
+*.coverage
+
+# Publish
+publish/
+app.publish/
+
+# EF Migrations (optional - if you want to exclude)
+# Migrations/
