@@ -23,8 +23,8 @@ public class TaskController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetTasks([FromQuery] string? status = null)
     {
-        TaskStatus? taskStatus = null;
-        if (!string.IsNullOrEmpty(status) && Enum.TryParse<TaskStatus>(status, out var parsedStatus))
+        Core.Enums.TaskStatus? taskStatus = null;
+        if (!string.IsNullOrEmpty(status) && Enum.TryParse<Core.Enums.TaskStatus>(status, out var parsedStatus))
         {
             taskStatus = parsedStatus;
         }
@@ -78,7 +78,7 @@ public class TaskController : ControllerBase
             EmailId = request.EmailId,
             Title = request.Title,
             Description = request.Description,
-            Status = TaskStatus.Pending,
+            Status = Core.Enums.TaskStatus.Pending,
             DueDate = request.DueDate
         };
 
@@ -111,7 +111,7 @@ public class TaskController : ControllerBase
         task.Description = request.Description;
         task.DueDate = request.DueDate;
         
-        if (Enum.TryParse<TaskStatus>(request.Status, out var status))
+        if (Enum.TryParse<Core.Enums.TaskStatus>(request.Status, out var status))
         {
             task.Status = status;
         }
@@ -144,7 +144,7 @@ public class TaskController : ControllerBase
         if (task == null || task.UserId != CurrentUserId)
             return NotFound();
 
-        task.Status = TaskStatus.Completed;
+        task.Status = Core.Enums.TaskStatus.Completed;
         await _unitOfWork.Tasks.UpdateAsync(task);
         await _unitOfWork.SaveChangesAsync();
 

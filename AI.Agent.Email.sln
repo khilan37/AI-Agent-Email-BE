@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI.Agent.Email.Core", "..\AI.Agent.Email.Core\AI.Agent.Email.Core.csproj", "{729AA45D-3E00-42DB-92C0-FCDC9D47A855}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI.Agent.Email.Core", "AI.Agent.Email.Core\AI.Agent.Email.Core.csproj", "{729AA45D-3E00-42DB-92C0-FCDC9D47A855}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI.Agent.Email.Infrastructure", "..\AI.Agent.Email.Infrastructure\AI.Agent.Email.Infrastructure.csproj", "{6F07F1E7-B0D4-4DAA-B0A5-85875DF154F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI.Agent.Email.Infrastructure", "AI.Agent.Email.Infrastructure\AI.Agent.Email.Infrastructure.csproj", "{6F07F1E7-B0D4-4DAA-B0A5-85875DF154F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI.Agent.Email.API", "AI.Agent.Email.API\AI.Agent.Email.API.csproj", "{A1B2C3D4-E5F6-7890-1234-567890ABCDEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{B2C3D4E5-F6A7-8901-2345-678901BCDEF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,11 +45,22 @@ Global
 		{6F07F1E7-B0D4-4DAA-B0A5-85875DF154F0}.Release|x64.Build.0 = Release|Any CPU
 		{6F07F1E7-B0D4-4DAA-B0A5-85875DF154F0}.Release|x86.ActiveCfg = Release|Any CPU
 		{6F07F1E7-B0D4-4DAA-B0A5-85875DF154F0}.Release|x86.Build.0 = Release|Any CPU
+		{A1B2C3D4-E5F6-7890-1234-567890ABCDEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B2C3D4-E5F6-7890-1234-567890ABCDEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B2C3D4-E5F6-7890-1234-567890ABCDEF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A1B2C3D4-E5F6-7890-1234-567890ABCDEF}.Debug|x64.Build.0 = Debug|Any CPU
+		{A1B2C3D4-E5F6-7890-1234-567890ABCDEF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A1B2C3D4-E5F6-7890-1234-567890ABCDEF}.Debug|x86.Build.0 = Debug|Any CPU
+		{A1B2C3D4-E5F6-7890-1234-567890ABCDEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B2C3D4-E5F6-7890-1234-567890ABCDEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B2C3D4-E5F6-7890-1234-567890ABCDEF}.Release|x64.ActiveCfg = Release|Any CPU
+		{A1B2C3D4-E5F6-7890-1234-567890ABCDEF}.Release|x64.Build.0 = Release|Any CPU
+		{A1B2C3D4-E5F6-7890-1234-567890ABCDEF}.Release|x86.ActiveCfg = Release|Any CPU
+		{A1B2C3D4-E5F6-7890-1234-567890ABCDEF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A546B843-A8B5-4114-8435-01E7047BF546}
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 EndGlobal

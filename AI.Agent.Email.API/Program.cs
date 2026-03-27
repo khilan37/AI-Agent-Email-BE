@@ -5,6 +5,7 @@ using AI.Agent.Email.Infrastructure.Data;
 using AI.Agent.Email.Infrastructure.External;
 using AI.Agent.Email.Infrastructure.Jobs;
 using Hangfire;
+using Hangfire.PostgreSql;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
